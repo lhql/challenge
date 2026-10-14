@@ -1,0 +1,17 @@
+__pycache__/
+.deps/
+results/baseline/dataset/
+results/baseline/YOPO_*/
+results/data/*.pt
+results/data/*.npz
+*.pyc
+.formatdeps/
+results/augmented/*.pt
+
+results/camera_v3/*.pt
+results/scale100k/*.pt
+results/depth_train_*/*.pt
+
+# 实验产物整体不入库(模型权重、深度录像、验证输出)。
+# 原规则用 results/sub/*.pt 形式,* 不跨目录,子目录里的权重仍会漏进来。
+results/

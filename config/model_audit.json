@@ -1,0 +1,31 @@
+{
+  "mass_kg": 1.5859999999999994,
+  "center_of_mass_body_m": [
+    0.0034678436317780595,
+    0.0,
+    0.0014754098360655744
+  ],
+  "inertia_com_kg_m2": [
+    [
+      0.02258842754098361,
+      -1.3552527156068805e-20,
+      -0.00015688524590163936
+    ],
+    [
+      -1.3552527156068805e-20,
+      0.024262870401008826,
+      0.0
+    ],
+    [
+      -0.00015688524590163936,
+      0.0,
+      0.042601942860025215
+    ]
+  ],
+  "model": "astra_yopo/models/my/my.sdf",
+  "model_modified": false,
+  "training_model_note": "Diagonal inertia uses the audited composite tensor diagonal; small xz coupling omitted. Actuator constants are not PX4 identified.",
+  "rotor_center_radial_m": 0.2,
+  "rotor_collision_radius_m": 0.127,
+  "training_bounding_sphere_radius_m": 0.35
+}

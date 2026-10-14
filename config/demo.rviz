@@ -1,0 +1,68 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: camera_init
+    Background Color: 30; 33; 39
+    Frame Rate: 20
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Name: Grid
+    Enabled: true
+    Cell Size: 1
+  - Class: rviz_default_plugins/PointCloud2
+    Name: MID360 map
+    Enabled: true
+    Topic:
+      Value: /cloud_registered
+      Reliability Policy: Best Effort
+      Depth: 2
+    Size (Pixels): 2
+    Style: Points
+    Color Transformer: AxisColor
+    Axis: Z
+  - Class: rviz_default_plugins/Odometry
+    Name: MID360 FAST-LIO body
+    Enabled: true
+    Topic:
+      Value: /gap/odom
+      Reliability Policy: Best Effort
+      Depth: 2
+    Keep: 1
+  - Class: rviz_default_plugins/Path
+    Name: GAP Actor predicted trajectory
+    Enabled: true
+    Topic:
+      Value: /gap/path
+      Depth: 1
+    Color: 40; 255; 100
+    Line Style: Lines
+    Line Width: 0.04
+  - Class: rviz_default_plugins/Image
+    Name: D435 depth input
+    Enabled: true
+    Topic:
+      Value: /camera/depth/image_rect_raw
+      Reliability Policy: Best Effort
+      Depth: 1
+    Normalize Range: true
+  Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/SetGoal
+    Topic:
+      Value: /goal_pose
+      Reliability Policy: Reliable
+      Depth: 1
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 10
+      Focal Point: {X: 2, Y: 0, Z: 1}
+      Pitch: 0.6
+      Yaw: 3.8
+Window Geometry:
+  Width: 1400
+  Height: 900

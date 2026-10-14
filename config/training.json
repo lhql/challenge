@@ -1,0 +1,20 @@
+{
+  "algorithm": "GAP-Nav independent continuous actor; not YOPO",
+  "state": "p_world[3], v_world[3], q_wxyz_world_from_body[4], omega_body[3]",
+  "trajectory": "four cubic Bezier acceleration and yaw-rate knots, 0.96 seconds",
+  "mpc_nodes": 12,
+  "dt_seconds": 0.08,
+  "physics_substeps": 4,
+  "shadow_comparison_nodes": 24,
+  "max_temporal_keys": 2,
+  "max_policy_challengers": 2,
+  "default_shadow_fraction": 0.03,
+  "executed_pilot_shadow_fraction": 0.01,
+  "executed_pilot_mpc_iterations": 4,
+  "batch_size": 16,
+  "seed": 42,
+  "depth_resolution": [96, 160],
+  "mid360_projection_resolution": [32, 128],
+  "cache_description": "existing Astra YOPO box environments; offline GPU raycasting",
+  "warning": "Pilot models are trained, but not accepted for high-speed navigation. Read results/REPORT.md."
+}
